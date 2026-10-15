@@ -8,6 +8,7 @@
 <div class="search"><input id="q" type="search" placeholder="Search the archives…" autocomplete="off"><div id="results"></div></div></header>
 <div class="layout"><aside class="sidebar"><nav><a class="nav-home" href="../index.html">⌂ Home</a>
 <details open><summary><span class="ic">⚔</span>General</summary>
+<a href="../General/Downloads.html">Downloads</a>
 <a href="../General/FAQ.html">FAQ</a>
 <a href="../General/Getting_Started.html">Getting Started</a>
 <a href="../General/Server_Overview.html">Server Overview</a>
@@ -36,6 +37,7 @@
 <a href="../Items_Epic/Augments_3_0.html">Epic 3.0 Augments</a>
 <a href="../Items_Epic/Epic_4_0.html">Epic 4.0</a>
 <a href="../Items_Epic/Augments_6_0.html">Epic 6.0 Augments</a>
+<a href="../Items_Epic/Epics.html">Epics Overview (1.0 - 5.0)</a>
 </details>
 <details open><summary><span class="ic">⚙</span>MacroQuest</summary>
 <a href="../Macroquest/MacroHelp_EQ_Built-in_Macros.html">Everquest Build-in Macro System</a>
@@ -48,9 +50,13 @@
 </details>
 <details open><summary><span class="ic">↑</span>Progression</summary>
 <a href="../Progression/AA_Grinding_Guide.html">AA Grinding Guide</a>
+<a href="../Progression/Beast_Domain.html">Beast Domain</a>
 <a href="../Progression/1-15.html">Level 01 to 15</a>
 <a href="../Progression/15-30.html">Level 15 to 30</a>
+<a href="../Progression/PoHate.html">Plane of Hate</a>
+<a href="../Progression/PoTime.html">Plane of Time</a>
 <a href="../Progression/Tacvi_Gear.html">Raid Gear - Tacvi, Seat of the Slaver</a>
+<a href="../Progression/ShardsLanding.html">Shard&#x27;s Landing</a>
 <a href="../Progression/Tier_1_-_Temple_of_Veeshan.html">Tier 1 Progression - Temple of Veeshan</a>
 <a href="../Progression/T10-Gear.html">Tier 10 Gear - Devastation</a>
 <a href="../Progression/T2_Gear.html">Tier 2 Gear - Riftseekers&#x27; Sanctum</a>
@@ -62,96 +68,93 @@
 <a href="../Progression/Tier_6_-_Kael.html">Tier 6 Progression - Kael</a>
 <a href="../Progression/T7_Gear.html">Tier 7 Gear - Anguish</a>
 <a href="../Progression/T8_Gear.html">Tier 8 Gear - Sleeper&#x27;s Tomb</a>
+<a href="../Progression/Tier_9_-_Xorbb.html">Tier 9 - Xorbb</a>
 </details></nav></aside>
 <main class="content"><div class="crumbs"><a href="../index.html">Home</a> › <span>ProFusion Macro</span></div><article class="page"><header class="page-head"><h1>How to use</h1>
-<div class="meta"><span>Last updated 2021-05-05</span></div></header>
-<div class="prose"><h1 class="toc-header" id="starting-restart-stop-the-bot-macro"> Starting / Restart / Stop the bot macro</h1><div>
-</div><blockquote class="is-info">
-<p><code>/start</code> - to start macro on all boots<br>
-<code>/restart</code> - to restart quickly the macro<br>
-<code>/endall</code> or <code>/all end</code> - to stop macro on all boots<br>
-<code>/end</code> - to stop macro on the current bot<br>
+<div class="meta"><span class="badge">Updated from eqprofusion.org</span><span>Last updated 2026-10-14</span></div></header>
+<div class="prose"><h1>Starting / Restart / Stop the bot macro</h1>
+<blockquote>
+<p><code>/start</code> - to start macro on all boots
+<code>/restart</code> - to restart quickly the macro
+<code>/endall</code> or <code>/all end</code> - to stop macro on all boots
+<code>/end</code> - to stop macro on the current bot
 <code>/all camp desktop</code> camp all bot and go to your desktop</p>
-</blockquote><div>
-</div><p>Manually</p><div>
-</div><blockquote class="is-info">
+</blockquote>
+<p>Manually</p>
+<blockquote>
 <p><code>/macro profusion/start</code></p>
-</blockquote><div>
-</div><h1 class="toc-header" id="commands-to-manage-your-bots"> Commands to manage your bots</h1><div>
-</div><h2 class="toc-header" id="the-phylosophie"> The phylosophie</h2><div>
-</div><p>You can ask all your bot to perform an action, a group, a type of class, or even just the current bot<br>
-To do that you run a WHO command like this for exemple</p><div>
-</div><blockquote class="is-info">
+</blockquote>
+<h1>Commands to manage your bots</h1>
+<h2>The phylosophie</h2>
+<p>You can ask all your bot to perform an action, a group, a type of class, or even just the current bot
+To do that you run a WHO command like this for exemple</p>
+<blockquote>
 <p><code>/me</code> or <code>/all</code> etc...</p>
-</blockquote><div>
-</div><p>After this main command you need to add the action you need to perform.</p><div>
-</div><blockquote>
-<p>an auto attack sequence <code>atk</code> or run debuff on your target <code>debuff</code><br>
+</blockquote>
+<p>After this main command you need to add the action you need to perform.</p>
+<blockquote>
+<p>an auto attack sequence <code>atk</code> or run debuff on your target <code>debuff</code>
 So you do to engage all your bots on the target <code>/all atk</code></p>
-</blockquote><div>
-</div><blockquote>
-<p>Or if you enagage a named, want to take aggro with your tank, debuff and after engage dps<br>
+<p>Or if you enagage a named, want to take aggro with your tank, debuff and after engage dps
 <code>/me tank</code> - <code>/all debuff</code> and after a delay have take the aggro, <code>/all atk</code> or you can engage separately your dps like this <code>/all pet atk</code> - <code>/all sup</code> - <code>/all melee</code> - <code>/all nuke</code></p>
-</blockquote><div>
-</div><p class="is-info"></p><div>
-</div><h2 class="toc-header" id="all-commands"> All commands</h2><div>
-</div><h3 class="toc-header" id="usage"> Usage :</h3><div>
-</div><p><code v-pre="true">/{who} [command] {{options}}</code></p><div>
-</div><h3 class="toc-header" id="who-to-specify-on-which-bots-you-what-remote-a-command"> {who} to specify on which bot(s) you what remote a command</h3><div>
-</div><p><code>{all|me|tar|groupX|war|shd|pal|...}</code></p><div>
-</div><h3 class="toc-header" id="command-can-be-used"> [command] can be used :</h3><div>
-</div><p v-pre="true"><code>[off|stop]</code><br>
-<code>[tank|atk|melee|support|nuke|aoe|stun|it||wiz|nec|hold]</code><br>
-<code>[heal]</code> {{on|off|tar|fix|spam}}<br>
-<code>[curse]</code> {{on|off}}<br>
-<code>[debuff]</code> {{on|off}}<br>
-<code>[buff]</code> {{on|off|aura|full|short|long}}<br>
-<code>[unbuff]</code> {{all|tar|levi|illu|spell SpellName|SpellName}}<br>
-<code>[sn|snt]</code> {{Spell(s)/Disc(s)}} {{Target(s)}} (separator is |)<br>
-<code>[twist]</code> {{on|off|melee|caster}}<br>
-<code>[shrink]</code> {{all,me,pet}}<br>
-<code>[levi]</code> {{all,me,pet}}<br>
-<code>[loadspells|set]</code> {{SpellListName}}<br>
-<code>[tar]</code><br>
-<code>[stick]</code> {{me|off|combat}}<br>
-<code>[roman]</code><br>
-<code>[move]</code> {{me|tar|combat on/off|say Message|roman}}<br>
-<code>[combatmove]</code> {{on|off}}<br>
-<code>[combatstick]</code> {{on|off}}<br>
-<code>[coth]</code> {{raid|bot|groupX}}<br>
-<code>[balance]</code> {{|%Value}} do not used is adv feat<br>
-<code>[forage]</code> {{on|off}}<br>
-<code>[accept]</code> {{all|on|off}}<br>
-<code>[rez]</code> {{all|bot|me|tar}}<br>
-<code>[drag]</code><br>
-<code>[pet]</code> {{atk|off|summon|clear|hold}}<br>
-<code>[inv]</code> {{save|restore|check}}, do not used {{aug|bank|clean|spell}} is adv feat<br>
-<code>[bank]</code> do not used {{stock|clean}} is adv feat<br>
-<code>[find]</code> {{Item lnk|Items List}}<br>
-<code>[aug]</code> (#bot augmentitem)<br>
-<code>[mystats]</code> (#mystats)<br>
-<code>[raid]</code> {{save FormName|load FormName}}<br>
-<code>[group]</code> {{save FormName|load FormName}}<br>
-<code>[zone]</code> {{chrush|unrest|gubk|seb|solr|cod|pofi|tov|rift|hn|hole|mpg|keal|angu|sleep|xorbb|devast}}<br>
-<code>[loot]</code> {{all|force|Ignore,Sell,Keep,Destroy,quest,auto,common,notify}}<br>
-<code>[warp]</code><br>
-<code>[eq]</code> {{sound mute/value|effect on/off|fg value|bg value|}}<br>
-<code>[lps]</code> {{on|off}}<br>
-<code>[exit]</code><br>
-<code>[camp]</code><br>
-<code>[start|restart|end]</code></p><div>
-</div><h1 class="toc-header" id="how-to-use-warp"> How To use warp</h1><div>
-</div><h2 class="toc-header" id="by-using-a-easy-npc-click-on-the-map"> By using a easy npc click on the map</h2><div>
-</div><ul>
+</blockquote>
+<h2>All commands</h2>
+<h3>Usage :</h3>
+<p><code>/{who} [command] {{options}}</code></p>
+<h3>{who} to specify on which bot(s) you what remote a command</h3>
+<p><code>{all|me|tar|groupX|war|shd|pal|...}</code></p>
+<h3>[command] can be used :</h3>
+<p><code>[off|stop]</code>
+<code>[tank|atk|melee|support|nuke|aoe|stun|it||wiz|nec|hold]</code>
+<code>[heal]</code> {{on|off|tar|fix|spam}}
+<code>[curse]</code> {{on|off}}
+<code>[debuff]</code> {{on|off}}
+<code>[buff]</code> {{on|off|aura|full|short|long}}
+<code>[unbuff]</code> {{all|tar|levi|illu|spell SpellName|SpellName}}
+<code>[sn|snt]</code> {{Spell(s)/Disc(s)}} {{Target(s)}} (separator is |)
+<code>[twist]</code> {{on|off|melee|caster}}
+<code>[shrink]</code> {{all,me,pet}}
+<code>[levi]</code> {{all,me,pet}}
+<code>[loadspells|set]</code> {{SpellListName}}
+<code>[tar]</code>
+<code>[stick]</code> {{me|off|combat}}
+<code>[roman]</code>
+<code>[move]</code> {{me|tar|combat on/off|say Message|roman}}
+<code>[combatmove]</code> {{on|off}}
+<code>[combatstick]</code> {{on|off}}
+<code>[coth]</code> {{raid|bot|groupX}}
+<code>[balance]</code> {{|%Value}} do not used is adv feat
+<code>[forage]</code> {{on|off}}
+<code>[accept]</code> {{all|on|off}}
+<code>[rez]</code> {{all|bot|me|tar}}
+<code>[drag]</code>
+<code>[pet]</code> {{atk|off|summon|clear|hold}}
+<code>[inv]</code> {{save|restore|check}}, do not used {{aug|bank|clean|spell}} is adv feat
+<code>[bank]</code> do not used {{stock|clean}} is adv feat
+<code>[find]</code> {{Item lnk|Items List}}
+<code>[aug]</code> (#bot augmentitem)
+<code>[mystats]</code> (#mystats)
+<code>[raid]</code> {{save FormName|load FormName}}
+<code>[group]</code> {{save FormName|load FormName}}
+<code>[zone]</code> {{chrush|unrest|gubk|seb|solr|cod|pofi|tov|rift|hn|hole|mpg|keal|angu|sleep|xorbb|devast}}
+<code>[loot]</code> {{all|force|Ignore,Sell,Keep,Destroy,quest,auto,common,notify}}
+<code>[warp]</code>
+<code>[eq]</code> {{sound mute/value|effect on/off|fg value|bg value|}}
+<code>[lps]</code> {{on|off}}
+<code>[exit]</code>
+<code>[camp]</code>
+<code>[start|restart|end]</code></p>
+<h1>How To use warp</h1>
+<h2>By using a easy npc click on the map</h2>
+<ul>
 <li><code>Ctl + right clic</code> - warp all your bots</li>
 <li><code>Shiff + right clic</code> - warp your char</li>
-</ul><div>
-</div><h2 class="toc-header" id="to-use-warp-from-command-can-use"> To use warp from command can use :</h2><div>
-</div><ul>
-<li>To teleport self to target<br>
+</ul>
+<h2>To use warp from command can use :</h2>
+<ul>
+<li>To teleport self to target
 <code>/warp loc ${Target.Y} ${Target.X} ${Target.Z}</code></li>
-<li>To teleport all bots and self<br>
+<li>To teleport all bots and self
 <code>/bcaa //warp loc ${Target.Y} ${Target.X} ${Target.Z}</code></li>
-</ul><div>
-</div></div></article><footer class="foot">EverQuest ProFusion wiki archive · restored 2026 · static facelift build</footer></main></div>
+</ul></div></article><footer class="foot">EverQuest ProFusion wiki archive · restored 2026 · static facelift build</footer></main></div>
 <script src="../assets/search.js"></script></body></html>

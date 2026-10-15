@@ -8,6 +8,7 @@
 <div class="search"><input id="q" type="search" placeholder="Search the archives…" autocomplete="off"><div id="results"></div></div></header>
 <div class="layout"><aside class="sidebar"><nav><a class="nav-home" href="../index.html">⌂ Home</a>
 <details open><summary><span class="ic">⚔</span>General</summary>
+<a href="../General/Downloads.html">Downloads</a>
 <a href="../General/FAQ.html">FAQ</a>
 <a href="../General/Getting_Started.html">Getting Started</a>
 <a href="../General/Server_Overview.html">Server Overview</a>
@@ -36,6 +37,7 @@
 <a href="../Items_Epic/Augments_3_0.html">Epic 3.0 Augments</a>
 <a href="../Items_Epic/Epic_4_0.html">Epic 4.0</a>
 <a href="../Items_Epic/Augments_6_0.html">Epic 6.0 Augments</a>
+<a href="../Items_Epic/Epics.html">Epics Overview (1.0 - 5.0)</a>
 </details>
 <details open><summary><span class="ic">⚙</span>MacroQuest</summary>
 <a href="../Macroquest/MacroHelp_EQ_Built-in_Macros.html">Everquest Build-in Macro System</a>
@@ -48,9 +50,13 @@
 </details>
 <details open><summary><span class="ic">↑</span>Progression</summary>
 <a href="../Progression/AA_Grinding_Guide.html">AA Grinding Guide</a>
+<a href="../Progression/Beast_Domain.html">Beast Domain</a>
 <a href="../Progression/1-15.html">Level 01 to 15</a>
 <a href="../Progression/15-30.html">Level 15 to 30</a>
+<a href="../Progression/PoHate.html">Plane of Hate</a>
+<a href="../Progression/PoTime.html">Plane of Time</a>
 <a href="../Progression/Tacvi_Gear.html">Raid Gear - Tacvi, Seat of the Slaver</a>
+<a href="../Progression/ShardsLanding.html">Shard&#x27;s Landing</a>
 <a href="../Progression/Tier_1_-_Temple_of_Veeshan.html">Tier 1 Progression - Temple of Veeshan</a>
 <a href="../Progression/T10-Gear.html">Tier 10 Gear - Devastation</a>
 <a href="../Progression/T2_Gear.html">Tier 2 Gear - Riftseekers&#x27; Sanctum</a>
@@ -62,10 +68,98 @@
 <a href="../Progression/Tier_6_-_Kael.html">Tier 6 Progression - Kael</a>
 <a href="../Progression/T7_Gear.html">Tier 7 Gear - Anguish</a>
 <a href="../Progression/T8_Gear.html">Tier 8 Gear - Sleeper&#x27;s Tomb</a>
+<a href="../Progression/Tier_9_-_Xorbb.html">Tier 9 - Xorbb</a>
 </details></nav></aside>
 <main class="content"><div class="crumbs"><a href="../index.html">Home</a> › <span>General</span></div><article class="page"><header class="page-head"><h1>Setting up your client</h1>
-<div class="meta"><span>Last updated 2020-11-15</span></div></header>
-<div class="prose"><h1 class="toc-header" id="h-1-obtain-a-copy-of-everquest-rain-of-fear-2"> 1. Obtain a copy of EverQuest Rain of Fear 2</h1><div>
+<div class="meta"><span class="badge">Updated from eqprofusion.org</span><span>Last updated 2026-10-14</span></div></header>
+<div class="prose"><h1>Getting Started - Client (RoF2)</h1>
+<p>Obtain a copy of EverQuest Rain of Fear 2</p>
+<pre><code>- **Nobody here can help you with getting a copy of the RoF2 client**
+</code></pre>
+<p>To create a server login account</p>
+<pre><code>- Visit/Create a account on [eqemulator.org](https://www.eqemulator.org/)
+</code></pre>
+<p>After creating your account, if you don't receive your verification email….you will need to request it again.</p>
+<pre><code>    - [Request Verification Email Again](https://www.eqemulator.org/forums/register.php?do=requestemail)
+</code></pre>
+<p>Now that your account is verified, you should have an option on the left hand side to “Create Account" nested under LoginServer Accounts.</p>
+<pre><code>    - **This account is the one that you use to login to the game.**
+</code></pre>
+<ul>
+<li>Go to the root folder of your RoF2 installation. Find the eqhost.txt file and verify that it looks as below:</li>
+</ul>
+<p>[LoginServer]
+Host=login.eqemulator.net:5999
+4. Inside the RoF2 folder, find the eqgame.exe file</p>
+<ul>
+<li>Right Click the file and hover over “Send to” and click “Desktop (create shortcut)"</li>
+</ul>
+<p>Find the shortcut on your desktop</p>
+<pre><code>- Right click on it and then click Properties
+
+- Add **patchme** to the end of the target field
+</code></pre>
+<p></p>
+<h1>Profusion Server Files</h1>
+<p>This is the time that you would need to update a few files. You will need to download and replace the following files. These are also located in the discord channel <a href="https://discord.com/channels/512858081701527573/512858674583175168"><strong>server-files</strong></a></p>
+<p>Main Everquest folder files</p>
+<ul>
+<li>
+<p><strong>spells_us.txt</strong></p>
+</li>
+<li>
+<p><strong>dbstr_us.txt</strong></p>
+</li>
+<li>
+<p><strong>dinput8.dll</strong> (Fixes large HP issues with client)</p>
+</li>
+</ul>
+<p>Resource Folder files</p>
+<ul>
+<li>
+<p><strong>SkillCaps.txt</strong></p>
+</li>
+<li>
+<p><strong>BaseData.txt</strong></p>
+</li>
+</ul>
+<p>There is a server UI that is suggested to use as well because if you don't some items will show as pearls and not the intended graphic. The UI files are in RoF2 Installation &gt; uifiles &gt; make a folder in that directory that you can reference to change your UI in game</p>
+<ul>
+<li><a href="https://discord.com/channels/512858081701527573/512858674583175168/1443618849793769544">Server UI</a></li>
+</ul>
+<h1>Troubleshooting Common Issues</h1>
+<p>If the game is running at super speed or if you cannot create a new character – The cause is due to AMD speed bug. Apply the patch below.</p>
+<pre><code>- [AMD Issue Fix](https://discord.com/channels/512858081701527573/512858674583175168/1451210145014218925)
+</code></pre>
+<p>I'm crashing constantly! This can be a number of things but some things that you could try.</p>
+<pre><code>- [Download and run this legacy DirectX](https://www.microsoft.com/en-us/download/details.aspx?id=8109) runtime libraries install. It can help with DX crashes.
+</code></pre>
+<p><a href="https://ntcore.com/4gb-patch/">4GB eqgame.exe patch</a></p>
+<pre><code>    - Run the patch and locate your eqgame.exe and patch it.
+
+    - or [pre-patched eqgame.exe](https://github.com/RekkasGit/E3Next/files/12749369/eqgame.zip) that you can just place in your EQ directory and overwrite the old eqgame.exe
+
+
+
+
+- Use old models instead of the Luclin ones
+
+- Use a toned down GlobalLoad.txt file. [E3N](https://github.com/RekkasGit/E3Next/wiki/5)-Common-issues---FAQ) has one that is toned down but make a backup before you replace it.
+</code></pre>
+<p>If you box more than 1 character, you could setup a EQ directory for the driver and another EQ directory for the bots.</p>
+<pre><code>    - Remember, if this route is taken that you must do the server files for both EQ directories.
+
+    - Doing this method can allow you to strip down the bot clients as much as you want and it not interfere with the driver.
+</code></pre>
+<p>Zone Pulls and disconnects</p>
+<pre><code>- Take off Yo Momma So Fat Stone
+</code></pre>
+<p>Turn off logging</p>
+<pre><code>    - /log off
+</code></pre>
+<p>Turn off some of your filters</p>
+<pre><code>    - I have everything set to Hide except for Auctions, Bad Word, Group Chat, Guild Chat, OOC, Shouts and Socials.
+</code></pre><details class="archived"><summary>Archived 2020 version of this page</summary><div class="archived-body"><h1 class="toc-header" id="h-1-obtain-a-copy-of-everquest-rain-of-fear-2"> 1. Obtain a copy of EverQuest Rain of Fear 2</h1><div>
 </div><tabset><template v-slot:tabs=""><li>Torrent downloader</li><li>Google drive</li></template><template v-slot:content=""><div class="tabset-panel"><p><strong>http://patch.eqprofusion.com.s3.fr-par.scw.cloud/everquest_rof2_pf_download.zip</strong></p><blockquote class="is-info">
 <p>In the zip file will contain a client_download.bat - you can run this as Administrator to start downloading the client files</p>
 </blockquote></div><div class="tabset-panel"><p><a href="https://drive.google.com/file/d/13EjCmQKYfsYP6VNsgsi8L4vy4TYjnRmG">https://drive.google.com/file/d/13EjCmQKYfsYP6VNsgsi8L4vy4TYjnRmG</a></p></div></template></tabset><div>
@@ -134,5 +228,5 @@ Host=eqprofusion.com:5999
 </div><div>
 </div><div>
 </div><div>
-</div></div></article><footer class="foot">EverQuest ProFusion wiki archive · restored 2026 · static facelift build</footer></main></div>
+</div></div></details></div></article><footer class="foot">EverQuest ProFusion wiki archive · restored 2026 · static facelift build</footer></main></div>
 <script src="../assets/search.js"></script></body></html>
